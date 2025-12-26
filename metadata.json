@@ -1,0 +1,7 @@
+{
+  "name": "TaxGuide NG",
+  "description": "A tax compliance platform for Nigerians, facilitating navigation of the Nigeria Tax Act 2025 with automated calculations and interactive guidance.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

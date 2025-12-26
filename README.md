@@ -1,11 +1,26 @@
-<div align="center">
+# TaxGuide NG: Nigeria Tax Act 2025 Simplified
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+TaxGuide NG is a world-class tax compliance and education platform designed specifically for the **Nigeria Tax Act 2025**. It simplifies complex fiscal laws into actionable guidance for individuals, small businesses, and digital entrepreneurs.
 
-  <h1>Built with AI Studio</h2>
+## 🚀 Vision
+To empower every Nigerian taxpayer with the clarity and tools needed to navigate the 2025 fiscal landscape, fostering a culture of compliance and economic growth.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## ✨ Key Features
+- **Interactive Tax Calculator**: Precision calculations for Personal Income Tax (PIT) with multi-currency support and deduction optimization.
+- **Skujy AI Assistant**: A Groq-powered (Llama 3.3 / Gemini) tax expert that understands the 2025 Act in both English and Nigerian Pidgin.
+- **Knowledge Base Navigator**: Searchable database of the Tenth Schedule incentives, VAT exemptions, and common FAQs.
+- **Taxpayer Journey Mapper**: A flowchart-based tool to determine your specific filing obligations.
+- **Community Forum**: A vibrant hub for peer-to-peer discussions on recent tax rulings and interpretations.
+- **Receipt Vault**: Secure storage for business expense documentation (Simulation).
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## 🛠️ Technical Stack
+- **Frontend**: React 19, TypeScript, Tailwind CSS.
+- **Visualization**: Recharts for tax breakdown analytics.
+- **AI**: Google Gemini 3.0 (Pro/Flash) for intelligent tax guidance.
+- **Styling**: Modern "Glassmorphism" UI with smooth Framer-like transitions.
 
-</div>
+## ⚖️ Disclaimer
+This tool provides guidance only and does not constitute professional legal or tax advice. Tax laws are subject to interpretation by the Federal Inland Revenue Service (FIRS) and State Internal Revenue Services (SIRS).
+
+---
+*Built for the Nigerian People. 🇳🇬*
