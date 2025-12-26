@@ -7,36 +7,34 @@ const INITIAL_TOPICS: ForumTopic[] = [
     id: '1', 
     title: 'How to link multiple TINs for mixed income?', 
     author: 'Tunde_Lagos', 
-    replies: 4, 
+    replies: 3, 
     time: '2h ago', 
     category: 'General', 
     content: "I have both salary and a side hustle. My employer uses one TIN, but I registered my business with another. The 2025 Act says we should consolidate. How do I start the process on TaxPRO-Max?",
     repliesList: [
       { id: 'r1', author: 'Skujy_Bot', text: "Actually, you should apply for consolidation through the JTB portal first. Tip: consolidation takes about 5 working days.", time: '1h ago' },
       { id: 'r2', author: 'TaxPro_99', text: "Just go to your nearest LTO (Local Tax Office). They have a dedicated desk for TIN alignment now.", time: '30m ago' },
-      { id: 'r2b', author: 'LuckyMan', text: "I did mine last week. Just bring your NIN and both TIN numbers. Very smooth process.", time: '10m ago' },
-      { id: 'r2c', author: 'OgaFixer', text: "Make sure you check your email for the confirmation link after they merge it!", time: '5m ago' }
+      { id: 'r2b', author: 'LuckyMan', text: "I did mine last week. Just bring your NIN and both TIN numbers. Very smooth process.", time: '10m ago' }
     ]
   },
   { 
     id: '2', 
     title: 'VAT exemptions for online tutors - anyone verified?', 
     author: 'GraceEdu', 
-    replies: 3, 
+    replies: 2, 
     time: '5h ago', 
     category: 'VAT', 
     content: "I run a tutorial center online. I read that education services are zero-rated (0% VAT). Does this apply to virtual classes for students abroad?",
     repliesList: [
       { id: 'r3', author: 'LegalEagle', text: "Section 187 specifically mentions 'Educational Books and Materials'. Virtual classes are often treated as 'Exported Services' if the students are abroad, which is also 0% VAT!", time: '2h ago' },
-      { id: 'r3b', author: 'Skujy_Bot', text: "Grace, remember that you still need to register for VAT even if your goods are zero-rated. It helps with input tax claims later.", time: '1h ago' },
-      { id: 'r3c', author: 'EduConsult', text: "I've been zero-rating my Zoom classes for 2 years now. FIRS accepted it in our last audit.", time: '30m ago' }
+      { id: 'r3b', author: 'Skujy_Bot', text: "Grace, remember that you still need to register for VAT even if your goods are zero-rated. It helps with input tax claims later.", time: '1h ago' }
     ]
   },
   { 
     id: '3', 
     title: 'Crypto CGT: Are P2P transfers tracked?', 
     author: 'CryptoKing_NG', 
-    replies: 5, 
+    replies: 4, 
     time: '1d ago', 
     category: 'Digital Assets', 
     content: "With the new 10% Capital Gains Tax on digital assets, how is the government tracking P2P? If I sell USDT for Naira on a decentralized platform, am I still liable?",
@@ -44,8 +42,7 @@ const INITIAL_TOPICS: ForumTopic[] = [
       { id: 'r4', author: 'FIRS_Watcher', text: "They are tracking bank inflows. Any large unexplained inflow into your account can trigger an audit where you'll have to explain the source and pay the 10% CGT.", time: '12h ago' },
       { id: 'r4b', author: 'HodlHard', text: "Omo, 10% on gains is better than the 30% CIT some people feared. I'll just keep good records.", time: '8h ago' },
       { id: 'r4c', author: 'Skujy_Bot', text: "Correct. Section 4 specifically targets the disposal of assets. Keep your buy/sell receipts.", time: '4h ago' },
-      { id: 'r4d', author: 'Timi_Dev', text: "Does this affect swapping one coin for another or only when cashing out to Naira?", time: '2h ago' },
-      { id: 'r4e', author: 'Blockchain_Chi', text: "Technically, every swap is a taxable event, but focus on the Naira conversion for now.", time: '1h ago' }
+      { id: 'r4d', author: 'Timi_Dev', text: "Does this affect swapping one coin for another or only when cashing out to Naira?", time: '2h ago' }
     ]
   },
   {
@@ -65,15 +62,14 @@ const INITIAL_TOPICS: ForumTopic[] = [
     id: '5',
     title: 'VAT on Netflix and Spotify - Who pays?',
     author: 'StreamMaster',
-    replies: 4,
+    replies: 3,
     time: '6h ago',
     category: 'VAT',
     content: "I noticed my Netflix subscription price went up slightly. Is the 7.5% VAT being collected by the bank or the company directly?",
     repliesList: [
       { id: 'r11', author: 'FinanceFix', text: "The FIRS appointed foreign companies as agents. Netflix collects it directly from you and remits it to FIRS.", time: '4h ago' },
       { id: 'r12', author: 'Skujy_Bot', text: "This falls under the 'Significant Economic Presence' rules updated in 2025. Digital services consumed in Nigeria are VATable.", time: '2h ago' },
-      { id: 'r13', author: 'Oga_Stream', text: "At least it's only 7.5%, in some countries it's up to 20%!", time: '1h ago' },
-      { id: 'r14', author: 'BankerBen', text: "Banks also charge a processing fee sometimes, don't confuse that with VAT.", time: '10m ago' }
+      { id: 'r13', author: 'Oga_Stream', text: "At least it's only 7.5%, in some countries it's up to 20%!", time: '1h ago' }
     ]
   },
   {
@@ -92,16 +88,28 @@ const INITIAL_TOPICS: ForumTopic[] = [
   },
   {
     id: '7',
+    title: 'Small Business CIT Exemption: Filing is still mandatory!',
+    author: 'BreadSeller',
+    replies: 2,
+    time: '2d ago',
+    category: 'Business',
+    content: "My business turnover is only N15m. Since I'm exempt from CIT (0%), do I still need to file anything at all with FIRS?",
+    repliesList: [
+      { id: 'r31', author: 'Skujy_Bot', text: "ABSOLUTELY. Exemption from payment is not exemption from filing. You must file nil returns or you will face late filing penalties!", time: '1d ago' },
+      { id: 'r32', author: 'AuditMan', text: "Don't play with this. Late filing penalty for companies starts from N50,000 and increases daily.", time: '12h ago' }
+    ]
+  },
+  {
+    id: '8',
     title: 'SaaS Startup: SEP rules for foreign clients',
     author: 'SoftDev_Ibadan',
-    replies: 3,
+    replies: 2,
     time: '3d ago',
     category: 'Business',
     content: "If my Nigerian SaaS company sells to a US company, do I charge VAT? Or is it an 'Exported Service'?",
     repliesList: [
       { id: 'r41', author: 'LegalPro', text: "Services provided to persons outside Nigeria are generally zero-rated. You don't charge VAT to your US client.", time: '2d ago' },
-      { id: 'r42', author: 'Skujy_Bot', text: "Keep your proof of export (service agreement and proof of foreign inflow) to justify the 0% VAT during audits.", time: '1d ago' },
-      { id: 'r43', author: 'GlobalDev', text: "I just use invoices in USD and mark them as Zero-Rated for VAT. Never had an issue.", time: '12h ago' }
+      { id: 'r42', author: 'Skujy_Bot', text: "Keep your proof of export (service agreement and proof of foreign inflow) to justify the 0% VAT during audits.", time: '1d ago' }
     ]
   }
 ];
@@ -139,6 +147,7 @@ const CommunityForum: React.FC = () => {
   const handleReportSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsReporting(true);
+    // Simulate API call
     setTimeout(() => {
       setIsReporting(false);
       setReportSuccess(true);
@@ -159,7 +168,7 @@ const CommunityForum: React.FC = () => {
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-emerald-900 p-10 rounded-[2.5rem] text-white shadow-xl relative overflow-hidden">
         <div className="relative z-10">
           <h2 className="text-3xl font-black mb-2">Community Forum</h2>
-          <p className="text-emerald-100/70">Discuss the 2025 Tax Act with {topics.length + 242} active members. Click cards to expand.</p>
+          <p className="text-emerald-100/70">Discuss the 2025 Tax Act with {topics.length + 154} active members. Click cards to expand.</p>
         </div>
         <button
           onClick={() => setShowModal(true)}
@@ -176,7 +185,7 @@ const CommunityForum: React.FC = () => {
           <div 
             key={topic.id} 
             className={`bg-white p-6 rounded-3xl border transition-all flex flex-col group ${
-              expandedTopic === topic.id ? 'border-emerald-500 ring-2 ring-emerald-500/5 shadow-xl' : 'border-slate-200 shadow-sm hover:border-emerald-300'
+              expandedTopic === topic.id ? 'border-emerald-500 ring-2 ring-emerald-500/5' : 'border-slate-200 shadow-sm hover:border-emerald-300'
             }`}
           >
             <div className="flex items-center justify-between cursor-pointer" onClick={() => toggleExpand(topic.id)}>
@@ -216,15 +225,15 @@ const CommunityForum: React.FC = () => {
             {expandedTopic === topic.id && (
               <div className="mt-6 pt-6 border-t border-slate-100 animate-in slide-in-from-top-2 duration-300">
                 <div className="bg-slate-50 p-5 rounded-2xl border border-slate-100 mb-8">
-                  <p className="text-slate-700 text-sm leading-relaxed whitespace-pre-wrap font-medium">
+                  <p className="text-slate-700 text-sm leading-relaxed whitespace-pre-wrap">
                     {topic.content}
                   </p>
                 </div>
                 
-                <div className="space-y-6 mb-8">
+                <div className="space-y-4 mb-8">
                   <h5 className="text-[10px] font-black uppercase text-slate-400 tracking-widest border-b border-slate-50 pb-2">Conversation Thread</h5>
                   {topic.repliesList.length > 0 ? topic.repliesList.map(reply => (
-                    <div key={reply.id} className="pl-4 border-l-4 border-emerald-100 space-y-2 py-1 hover:border-emerald-400 transition-colors">
+                    <div key={reply.id} className="pl-4 border-l-4 border-emerald-100 space-y-2 py-1">
                       <div className="flex items-center gap-2">
                         <span className={`text-xs font-bold ${reply.author === 'Skujy_Bot' ? 'text-orange-600' : 'text-slate-800'}`}>
                           {reply.author} {reply.author === 'Skujy_Bot' && '✨'}

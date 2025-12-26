@@ -12,6 +12,7 @@ export const VAT_RATE = 0.075;
 export const FOSSIL_FUEL_SURCHARGE_RATE = 0.05;
 export const DIGITAL_ASSET_CGT_RATE = 0.10;
 
+// Simulated Exchange Rates (NGN per 1 Unit)
 export const EXCHANGE_RATES = {
   NGN: 1,
   USD: 1550,
@@ -63,18 +64,18 @@ export const FAQ_DATA = [
     example: "If you transfer N15,000 from your Kuda account to a friend's GTBank account, N50 is deducted. A N5,000 transfer attracts no ETL."
   },
   {
+    question: "How do 'mixed income' earners calculate tax?",
+    answer: "You must combine your salary and your business profits into one 'Consolidated Gross Income' and apply the graduated rates.",
+    example: "If you earn N5m from a job and N3m profit from a shop, your total income is N8m. You apply the tax brackets to the full N8m after your deductions."
+  },
+  {
     question: "Are medical services VAT-exempt?",
     answer: "Yes, medical and pharmaceutical products and services are generally exempt from VAT to ensure healthcare remains affordable (Section 188).",
     example: "A bill for a N50,000 surgery at a private hospital should not have an additional 7.5% VAT added to the final amount."
   },
   {
-    question: "Does the 2025 Act affect Rent Stamp Duty?",
-    answer: "Yes, Section 104 mandates that all corporate lease agreements exceeding N100,000 per annum must be stamped. The rate is 0.75% of the total rent.",
-    example: "For a shop lease of N1,000,000 per year, the stamp duty is N7,500. This is usually paid by the tenant to make the agreement legally binding."
-  },
-  {
-    question: "What is the Fossil Fuel Surcharge (FFS)?",
-    answer: "Under Section 159, a 5% surcharge is levied on the importation or local production of fossil fuels, excluding CNG and LPG used for domestic purposes.",
-    example: "A company importing N10,000,000 worth of industrial diesel will pay an additional N500,000 as a fossil fuel surcharge."
+    question: "Can I deduct my rent from my taxable income?",
+    answer: "No, personal rent is not a deductible expense for PIT. However, if you use part of your home strictly for business, a portion of the rent can be a business expense.",
+    example: "A freelancer using one room as a dedicated office can deduct a percentage of their home rent as a business expense from their business income."
   }
 ];

@@ -2,6 +2,7 @@
 import { GoogleGenAI } from "@google/genai";
 import { ChatMessage, UserProfile } from "../types";
 
+// Always initialize with the provided API key from process.env.API_KEY
 const genAI = new GoogleGenAI({ apiKey: process.env.API_KEY || '' });
 
 export const getTaxGuidance = async (prompt: string, history: ChatMessage[] = [], profile?: UserProfile | null) => {
@@ -24,15 +25,17 @@ export const getTaxGuidance = async (prompt: string, history: ChatMessage[] = []
       ? "Respond primarily in Nigerian Pidgin English. Be friendly, relateable, and clear. Use tax terms correctly but explain them simply."
       : "Respond in clear, professional English suitable for Nigerian tax guidance.";
 
+    // Format history for Gemini SDK
     const contents = history.map(msg => ({
       role: msg.role === 'model' ? 'model' : 'user',
       parts: [{ text: msg.text }]
     }));
     
+    // Add current prompt
     contents.push({ role: 'user', parts: [{ text: prompt }] });
 
     const response = await genAI.models.generateContent({
-      model: "gemini-3-pro-preview", 
+      model: "gemini-3-pro-preview", // Best for complex tax reasoning
       contents,
       config: {
         systemInstruction: `You are Skujy, a world-class AI Tax Assistant for TaxGuide NG. You are an expert on the Nigeria Tax Act 2025. 
@@ -56,6 +59,7 @@ export const getTaxGuidance = async (prompt: string, history: ChatMessage[] = []
     return response.text || "Skujy couldn't generate a response right now.";
   } catch (error: any) {
     console.error("AI Service Error:", error);
+    // Provide a user-friendly error message based on common failure modes
     if (error.message?.includes("401") || error.message?.includes("API_KEY")) {
       return "Skujy is having trouble with authentication. Please check if the API key is correctly set.";
     }

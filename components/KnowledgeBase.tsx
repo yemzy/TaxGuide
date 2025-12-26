@@ -74,7 +74,7 @@ const KnowledgeBase: React.FC = () => {
                 </svg>
               </span>
             </div>
-            <div className={`overflow-hidden transition-all duration-300 ${expandedFaq === i ? 'max-h-[500px] mt-4 opacity-100' : 'max-h-0 opacity-0'}`}>
+            <div className={`overflow-hidden transition-all duration-300 ${expandedFaq === i ? 'max-height-visible mt-4 opacity-100' : 'max-h-0 opacity-0'}`}>
               <div className="text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-4 space-y-4">
                 <p>{faq.answer}</p>
                 {faq.example && (
@@ -117,7 +117,7 @@ const KnowledgeBase: React.FC = () => {
               </div>
               <p className="text-xs font-bold text-emerald-600 mb-2 uppercase tracking-tight">{sector.incentive} • {sector.threshold}</p>
               
-              <div className={`overflow-hidden transition-all duration-300 ${expandedSector === i ? 'max-h-[300px] mt-2 opacity-100' : 'max-h-0 opacity-0'}`}>
+              <div className={`overflow-hidden transition-all duration-300 ${expandedSector === i ? 'max-h-[300px] mt-2' : 'max-h-0'}`}>
                 <p className="text-xs text-slate-500 leading-relaxed border-t border-slate-100 pt-3">
                   {sector.details}
                 </p>
@@ -156,6 +156,11 @@ const KnowledgeBase: React.FC = () => {
         <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -mr-32 -mt-32 blur-3xl"></div>
         <div className="absolute bottom-0 left-0 w-64 h-64 bg-emerald-500/20 rounded-full -ml-32 -mb-32 blur-3xl"></div>
       </div>
+      <style>{`
+        .max-height-visible {
+          max-height: 500px;
+        }
+      `}</style>
     </div>
   );
 };
